@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2019/07/16 21:38:15 schmonz Exp $
+# $NetBSD: Makefile,v 1.19 2020/03/22 13:24:00 rillig Exp $
 #
 
 DISTNAME=		libtai-0.60
@@ -7,13 +7,14 @@ CATEGORIES=		devel
 MASTER_SITES=		http://cr.yp.to/libtai/
 
 MAINTAINER=		schmonz@NetBSD.org
-HOMEPAGE=		http://cr.yp.to/libtai.html
+HOMEPAGE=		https://cr.yp.to/libtai.html
 COMMENT=		Library for storing and manipulating dates and times
 LICENSE=		public-domain
 
 CONFLICTS=		libowfat<0.32nb1
 
 DJB_RESTRICTED=		NO
+DJB_ERRNO_HACK=		no
 
 EGDIR=			share/examples/${PKGBASE}
 
